@@ -28,34 +28,26 @@ do ZIP também contêm os 15 textos; `legacy_history.csv` registra os commits e 
 correspondentes, sem importar contas, emails ou o diretório `.git` original.
 `legacy_archive_record.json` registra o hash SHA-256 do ZIP recebido.
 
-Essa recuperação estabelece a origem imediata no experimento anterior. O ZIP não
-contém os arquivos-fonte públicos com mapeamentos por linha para essas 15 histórias
-nem documenta sua seleção inicial ou a remoção prévia de cláusulas de benefício.
-Portanto, essa parte da proveniência original continua em aberto. Para as 30 adições,
-os mapeamentos de arquivo, linha e texto-fonte já existentes foram mantidos.
+Essa recuperação estabelece a origem imediata no experimento anterior. As fontes
+públicas foram fornecidas posteriormente; a comparação textual e a confirmação
+humana são registradas abaixo. A seleção inicial e a sequência detalhada das
+adaptações não estão documentadas.
 
+## Comparação com as fontes e confirmação posterior
 
-## Compara??o com os datasets fornecidos posteriormente
-
-As tr?s c?pias recebidas est?o em `reference/source_datasets/`, com hashes em
-`source_manifest.json`. A verifica??o confirmou texto e linha das 30 adi??es.
+As três cópias fornecidas estão em `reference/source_datasets/`, com hashes em
+`source_manifest.json`. A comparação confirmou texto e linha das 30 adições.
 Para US_001, a linha 4 de `g28-zooniverse-uploaded.txt` coincide com o baseline
-ap?s retirar a cl?usula de benef?cio. Para as outras 14 hist?rias antigas,
-`reference/legacy_source_comparison.csv` registra correspond?ncias candidatas e
-diferen?as de reda??o. Esses v?nculos ainda precisam de confirma??o hist?rica
-pela pesquisadora; sem isso, n?o equivalem a mapeamentos de origem comprovados.
-O ZIP n?o continha as fontes externas, mas agora elas foram fornecidas separadamente.
-A sequ?ncia de edi??o anterior ao experimento permanece sem documenta??o.
+após retirar a cláusula de benefício.
 
+Para as outras 14 histórias antigas, a pesquisadora confirmou que foram adaptadas
+das correspondências identificadas nos datasets fornecidos.
+`reference/legacy_source_comparison.csv` preserva as correspondências e diferenças
+de redação. Os campos `source_file`, `source_line` e `source_full_text` registram
+os vínculos confirmados; `source_verification` distingue confirmação humana de
+coincidência textual. Os campos `candidate_source_*` preservam a investigação
+anterior e não indicam uma confirmação ainda pendente.
 
-## Confirma??o posterior da pesquisadora
-
-A pesquisadora confirmou que as 14 hist?rias antigas com diferen?as de reda??o
-foram adaptadas das correspond?ncias identificadas nos datasets fornecidos.
-Os campos `source_file`, `source_line` e `source_full_text` agora registram esses
-v?nculos; `source_verification` distingue a confirma??o humana da coincid?ncia
-textual. Os campos `candidate_source_*` preservam o registro da investiga??o
-anterior, n?o uma pend?ncia atual. As diferen?as de reda??o permanecem preservadas.
-N?o foi informada data da adapta??o nem sua sequ?ncia detalhada de edi??o.
-Esta confirma??o atualiza as ressalvas anteriores sobre os v?nculos candidatos.
-O artigo n?o foi atualizado nesta etapa, por solicita??o da pesquisadora.
+A confirmação posterior supera as ressalvas históricas sobre vínculos candidatos.
+Não foram informadas a data nem a sequência detalhada das adaptações; essa é uma
+limitação documental, não uma instrução de preenchimento para a versão publicada.

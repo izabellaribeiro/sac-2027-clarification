@@ -1,16 +1,12 @@
 # Registro dos materiais de replicação
 
-## Publicação
+## Publication
 
-Os materiais de replica??o s?o disponibilizados para avalia??o pelo endere?o an?nimo:
-https://anonymous.4open.science/r/speckit-clarification-study-111B/
-
-Esta ? a c?pia de refer?ncia para compara??o com o artigo. A afirma??o hist?rica
-de que o reposit?rio ainda n?o havia sido criado est? superada. O acesso pelo
-servi?o an?nimo n?o foi verificado nesta atualiza??o.
-
-A se??o Replication Materials do manuscrito deve usar o endere?o an?nimo e
-identificar a vers?o analisada sem expor a conta ou o reposit?rio de origem.
+The released materials are provided for review through the anonymous repository
+linked in the manuscript. Earlier statements that no repository existed describe
+the preparation stage and are superseded. Source account links are intentionally
+omitted from the released documentation. Access through the anonymous service
+was not independently verified during this documentation update.
 
 `prepare_release.py` é o script de preparação original. Os arquivos de documentação
 da cópia publicada foram atualizados posteriormente; uma nova preparação deve
@@ -40,7 +36,7 @@ aponta para os rótulos da aba Final, exportados em `final_classification.csv`;
 não houve nova classificação por IA nesta atualização.
 
 A confirmação não estabelece a independência das duas colunas anteriores:
-não apresentar kappa como confiabilidade humana. Consenso sobre perguntas não
+o material não apresenta kappa como confiabilidade humana. Consenso sobre perguntas não
 estabelece validação independente dos defeitos nas 135 variantes. O artigo não
 reivindica essa validação nem cobertura de detecção para o conjunto completo.
 
@@ -50,8 +46,8 @@ As 100 perguntas incluem 25 de cada condição, provenientes de 77 execuções e
 39 histórias-pai. Segundo a pesquisadora, a seleção considerou diferentes temas
 e datasets. Trata-se de seleção intencional, não aleatória. Não foram fornecidos
 critérios reproduzíveis por item, cotas por tema/dataset ou ordenação de seleção.
-Não inferir esses detalhes nem estimar prevalência nas 894 perguntas a partir
-desta amostra. A revalidação humana não muda essa limitação.
+Esses detalhes não estão documentados; a amostra não sustenta estimativas
+de prevalência nas 894 perguntas. A revalidação humana não muda essa limitação.
 
 ## Proveniência e confirmação posterior
 
@@ -71,8 +67,8 @@ distingue confirmação humana de coincidência textual. Os campos `candidate_so
 preservam a investigação anterior, não uma pendência atual.
 
 Essa confirmação supera as ressalvas históricas sobre vínculos candidatos.
-Não foram informadas a data nem a sequência detalhada das adaptações; não
-reconstruir essa história. As fontes fornecidas posteriormente estão em
+Não foram informadas a data nem a sequência detalhada das adaptações; essa
+limitação documental permanece registrada. As fontes fornecidas posteriormente estão em
 `reference/source_datasets/`, com hashes em `source_manifest.json`.
 
 ## Temas dos datasets
