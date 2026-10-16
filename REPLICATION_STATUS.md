@@ -1,78 +1,47 @@
-# Registro dos materiais de replicação
+# Replication materials
 
-## Publication
+## Released package
 
-The released materials are provided for review through the anonymous repository
-linked in the manuscript. Earlier statements that no repository existed describe
-the preparation stage and are superseded. Source account links are intentionally
-omitted from the released documentation. Access through the anonymous service
-was not independently verified during this documentation update.
+The package contains the prepared inputs, execution scripts, fixed clarification
+instructions and constitution, sanitized execution records, human coding records,
+and source provenance. Release hashes describe the sanitized files; experimental
+configuration hashes identify the original files.
 
-`prepare_release.py` é o script de preparação original. Os arquivos de documentação
-da cópia publicada foram atualizados posteriormente; uma nova preparação deve
-preservar essas atualizações. O manifesto registra os hashes atuais da cópia
-sanitizada e exclui a si próprio. Os hashes experimentais continuam identificando
-os arquivos originais, que podem diferir das cópias sanitizadas. A anonimização
-automática original não certifica a remoção de todos os identificadores contextuais.
-Manter backups e registros privados separados dos materiais publicados.
+## Results
 
-## Correspondência com o artigo revisado
+The 180 responses contain 894 tagged items: 224 baseline, 221 syntactic,
+224 semantic, and 225 pragmatic. Of the executions, 176 contain five items.
+Counts are equal in 131 of 135 baseline–variant comparisons.
 
-A recontagem dos marcadores nas 180 respostas de `results_new/` confirma 894 itens:
-224 baseline, 221 sintáticos, 224 semânticos e 225 pragmáticos. Há 176 execuções
-com cinco itens e 131 comparações baseline–variante com contagens iguais.
-A classificação final contém 100 perguntas, com 76 rótulos Classical Normative
-Scope e 24 Extended Scope (New AI Dimension), denominados no artigo requirements
-concerns e operational detail, respectivamente. Esses números descrevem contagens
-e conteúdo; não são taxas de detecção dos defeitos pretendidos.
+Two human specialists classified 100 selected questions by consensus:
+76 requirements concerns and 24 operational details. These content categories
+are not defect-detection rates. The final labels appear in the Final worksheet
+of `reference/final_audit_documented.xlsx` and in `reference/final_classification.csv`.
+Other coding worksheets document earlier stages, not independent final assessments.
+The study does not report human inter-rater reliability or independent validation
+of the intended defects across all 135 variants.
 
-## Consenso humano
+## Sampling
 
-A pesquisadora informou revalidação por dois especialistas humanos, sem participação
-de IA nas decisões de classificação. Não foi fornecida uma data de revisão.
-`reference/final_audit_documented.xlsx` acrescenta Review Record e conserva as abas
-e valores anteriores, inclusive notas provisórias, como histórico. O registro atual
-aponta para os rótulos da aba Final, exportados em `final_classification.csv`;
-não houve nova classificação por IA nesta atualização.
+The sample contains 25 questions per condition from 77 executions and 39 parent
+stories. Selection was intentional and considered different themes and datasets.
+No reproducible item-level selection rule, theme quotas, or dataset quotas were
+recorded. The sample does not support prevalence estimates for all 894 items.
 
-A confirmação não estabelece a independência das duas colunas anteriores:
-o material não apresenta kappa como confiabilidade humana. Consenso sobre perguntas não
-estabelece validação independente dos defeitos nas 135 variantes. O artigo não
-reivindica essa validação nem cobertura de detecção para o conjunto completo.
+## Provenance
 
-## Seleção das perguntas
+`reference/story_provenance.csv` distinguishes source text, prepared baseline,
+and variant. Source comparisons verify the file, line, and text of the 30 additions.
+Preparation removed benefit clauses and sometimes normalized actors, potentially
+introducing clarification needs in baselines.
 
-As 100 perguntas incluem 25 de cada condição, provenientes de 77 execuções e
-39 histórias-pai. Segundo a pesquisadora, a seleção considerou diferentes temas
-e datasets. Trata-se de seleção intencional, não aleatória. Não foram fornecidos
-critérios reproduzíveis por item, cotas por tema/dataset ou ordenação de seleção.
-Esses detalhes não estão documentados; a amostra não sustenta estimativas
-de prevalência nas 894 perguntas. A revalidação humana não muda essa limitação.
+For US_001, source text matches the baseline after benefit-clause removal.
+Source links for the other 14 legacy stories were confirmed by the researcher;
+`source_verification` distinguishes that confirmation from exact textual matches.
+`reference/legacy_source_comparison.csv` preserves wording differences, and
+`candidate_source_*` fields preserve the earlier source investigation.
+The detailed historical editing sequence is not documented.
 
-## Proveniência e confirmação posterior
-
-`reference/story_provenance.csv` reúne os 45 pais e distingue texto-fonte,
-baseline preparado e variante. As 30 adições têm arquivo-fonte, linha e texto-fonte
-registrados; a comparação com os datasets fornecidos confirmou esses vínculos.
-A preparação removeu cláusulas de benefício e pode ter normalizado atores,
-criando necessidades de esclarecimento já nos baselines.
-
-Para US_001, a linha 4 de `g28-zooniverse-uploaded.txt` coincide com o baseline
-após retirar a cláusula de benefício. Para as outras 14 histórias antigas,
-`reference/legacy_source_comparison.csv` preserva correspondências e diferenças
-de redação. A pesquisadora posteriormente confirmou que essas histórias foram
-adaptadas das correspondências identificadas nos datasets. Os campos `source_file`,
-`source_line` e `source_full_text` registram esses vínculos; `source_verification`
-distingue confirmação humana de coincidência textual. Os campos `candidate_source_*`
-preservam a investigação anterior, não uma pendência atual.
-
-Essa confirmação supera as ressalvas históricas sobre vínculos candidatos.
-Não foram informadas a data nem a sequência detalhada das adaptações; essa
-limitação documental permanece registrada. As fontes fornecidas posteriormente estão em
-`reference/source_datasets/`, com hashes em `source_manifest.json`.
-
-## Temas dos datasets
-
-Os temas descritivos estão em `reference/dataset_themes.md` e em `theme_summary`
-de `story_provenance.csv`. Não representam cotas reconstruídas da seleção das
-100 perguntas. Os rótulos de projeto do manifesto foram preservados.
+Source dataset copies and their hashes are in `reference/source_datasets/`.
+Descriptive themes are in `reference/dataset_themes.md` and `theme_summary` in
+`story_provenance.csv`; these are not reconstructed sampling quotas.

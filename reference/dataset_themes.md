@@ -13,9 +13,8 @@ manifesto existente; o tema de uma história não comprova sua origem externa.
 Cada história-pai participa das quatro condições. Esses números descrevem as
 45 histórias-pai, não a distribuição das 100 perguntas selecionadas.
 
-A pesquisadora informou que a seleção de 25 perguntas por condição considerou
-temas e datasets diferentes. Não foram informadas cotas por tema/dataset nem
-uma regra reproduzível por item. Os agrupamentos descritivos acima foram
+A seleção intencional de 25 perguntas por condição considerou temas e datasets
+diferentes. Não há registro de cotas por tema/dataset ou regra reproduzível por item. Os agrupamentos descritivos acima foram
 documentados a partir dos textos disponíveis e não devem ser apresentados como
 categorias ou cotas predefinidas na seleção original.
 
@@ -40,14 +39,11 @@ As três cópias fornecidas estão em `reference/source_datasets/`, com hashes e
 Para US_001, a linha 4 de `g28-zooniverse-uploaded.txt` coincide com o baseline
 após retirar a cláusula de benefício.
 
-Para as outras 14 histórias antigas, a pesquisadora confirmou que foram adaptadas
-das correspondências identificadas nos datasets fornecidos.
+Para as outras 14 histórias antigas, os vínculos com os datasets fornecidos
+foram confirmados pela pesquisadora.
 `reference/legacy_source_comparison.csv` preserva as correspondências e diferenças
 de redação. Os campos `source_file`, `source_line` e `source_full_text` registram
 os vínculos confirmados; `source_verification` distingue confirmação humana de
-coincidência textual. Os campos `candidate_source_*` preservam a investigação
-anterior e não indicam uma confirmação ainda pendente.
+coincidência textual. Os campos `candidate_source_*` preservam a investigação anterior.
 
-A confirmação posterior supera as ressalvas históricas sobre vínculos candidatos.
-Não foram informadas a data nem a sequência detalhada das adaptações; essa é uma
-limitação documental, não uma instrução de preenchimento para a versão publicada.
+A sequência detalhada das adaptações anteriores ao experimento não está documentada.

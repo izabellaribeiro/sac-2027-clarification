@@ -26,7 +26,7 @@ Counts are unchanged in 131 of 135 baseline–variant comparisons. The five-ques
 
 Two specialists reviewed 100 selected questions by consensus: 76 concerned requirement meaning or scope and 24 requested operational details. The sample contains 25 questions per condition, from 77 executions and 39 parent stories. Selection was intentional, not random, and does not support prevalence estimates for all 894 items. No blinded independent coding or inter-rater reliability estimate is claimed.
 
-`reference/final_classification.csv` retains the original labels: **Classical Normative Scope** corresponds to the manuscript's **requirements concerns**, and **Extended Scope (New AI Dimension)** corresponds to **operational detail**. The latter name does not establish that these information needs are specific to AI. Historical provisional notes remain part of the provenance; the documented subsequent human consensus identifies the final labels.
+`reference/final_classification.csv` retains the original labels: **Classical Normative Scope** corresponds to the manuscript's **requirements concerns**, and **Extended Scope (New AI Dimension)** corresponds to **operational detail**. The latter name does not establish that these information needs are specific to AI.
 
 ## Execution protocol
 
